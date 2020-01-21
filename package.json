@@ -1,0 +1,47 @@
+{
+  "name": "gamoraa-mongostore",
+  "version": "1.0.0",
+  "description": "Plugin provides firestore kind of functionality but based on mongodb.",
+  "main": "dist/src/mongo-store-service.js",
+  "types": "dist/src/mongo-store-service.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "format": "prettier --write 'src/**/*.ts'",
+    "start-example": "npm run build && node dist/examples/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Techie-Qabila/gamoraa-mongostore.git"
+  },
+  "keywords": [
+    "GRPC",
+    "gamoraa",
+    "mongo",
+    "store",
+    "mongoose",
+    "mongostore"
+  ],
+  "author": "Muhammad Ahmed <mahmed8003@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gamoraa": "^1.0.1",
+    "grpc-boom": "^1.0.26",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.9"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/mongodb": "^3.3.14",
+    "@types/mongoose": "^5.5.41",
+    "@types/node": "^12.7.8",
+    "@types/pino": "^5.15.3",
+    "mongodb-topology-manager": "^2.1.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.4"
+  }
+}

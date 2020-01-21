@@ -1,12 +1,13 @@
 {
   "name": "gamoraa-mongostore",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin provides firestore kind of functionality but based on mongodb.",
   "main": "dist/src/mongo-store-service.js",
   "types": "dist/src/mongo-store-service.d.ts",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "proto"
   ],
   "scripts": {
     "build": "tsc",

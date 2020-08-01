@@ -395,6 +395,7 @@ export function findOneAndUpdateDocument(
     model: Model<any>,
     request: any
 ): Promise<any> {
+    // TODO:: there is some issue please take care of it
     const q = model.findOneAndUpdate(request.id, JSON.parse(request.update), {
         new: request.returnNew,
         select: request.select,
